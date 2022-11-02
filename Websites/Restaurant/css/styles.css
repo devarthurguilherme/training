@@ -21,6 +21,7 @@ p {
 a {
     font-size: 2rem;
 }
+body {min-height: 100rem;}
 /*End of General*/
 /*Initial Section*/
 .banner {
@@ -50,6 +51,59 @@ a {
 
 .btn {
     font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff0157;
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: 0.5s;
 }
-/*5:28/
+
+.btn:hover {
+    letter-spacing: .6rem;
+}
 /*End of Initial Section*/
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 10rem;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+header #logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+header #logo span {
+    color: #ff0158;
+}
+
+header #navigation {
+    position: relative;
+    display: flex;
+}
+
+header #navigation a {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+/*End of Header*/
+/*9:00/
