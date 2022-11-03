@@ -21,8 +21,68 @@ p {
 a {
     font-size: 2rem;
 }
-body {min-height: 100rem;}
 /*End of General*/
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 10rem;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+header.sticky {
+    background-color: #fff;
+    padding: 1rem 10rem;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+header #logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3.2rem;
+    transition: .5s;
+}
+
+header.sticky #logo {
+    color: #111;
+}
+
+header #logo span {
+    color: #ff0158;
+}
+
+header #navigation {
+    position: relative;
+    display: flex;
+}
+
+header #navigation a {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: .5s;
+    scale: 1;
+}
+
+header #navigation a:hover {
+    color: #ff0157;
+    scale: 1.04;
+}
+
+header.sticky #navigation a {
+    color: #111;
+    font-weight: 500;
+}
+/*End of Header*/
 /*Initial Section*/
 .banner {
     position: relative;
@@ -67,43 +127,8 @@ body {min-height: 100rem;}
     letter-spacing: .6rem;
 }
 /*End of Initial Section*/
-/*Header*/
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 4rem 10rem;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s;
-    text-decoration: none;
-}
+/*Section About*/
 
-header #logo {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 3.2rem;
-}
+/*End of Section About*/
 
-header #logo span {
-    color: #ff0158;
-}
-
-header #navigation {
-    position: relative;
-    display: flex;
-}
-
-header #navigation a {
-    margin-left: 3rem;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 300;
-}
-
-/*End of Header*/
 /*9:00/
