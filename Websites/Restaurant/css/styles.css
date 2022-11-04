@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 html {
@@ -20,6 +21,10 @@ p {
 
 a {
     font-size: 2rem;
+}
+
+section {
+    padding: 10rem;
 }
 /*End of General*/
 /*Header*/
@@ -84,7 +89,7 @@ header.sticky #navigation a {
 }
 /*End of Header*/
 /*Initial Section*/
-.banner {
+.home {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -95,17 +100,17 @@ header.sticky #navigation a {
     background-size: cover;
 }
 
-.banner .content {
+.home .content {
     max-width: 90rem;
     text-align: center;
 }
 
-.banner .content h2 {
+.home .content h2 {
     font-size: 8rem;
     color: #fff;
 }
 
-.banner .content p {
+.home .content p {
     color: #fff;
 }
 
@@ -128,7 +133,45 @@ header.sticky #navigation a {
 }
 /*End of Initial Section*/
 /*Section About*/
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
 
+.titleText {
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.row .col50 .imgBox {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+.row .col50 .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*End of Section About*/
 
-/*9:00/
+/*15:00 scroll behavior não funciona!
+lance no anki o exercício de faze a seção about!
+/
