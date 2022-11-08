@@ -171,7 +171,20 @@ header.sticky #navigation a {
     object-fit: cover;
 }
 /*End of Section About*/
+/*Section Menu*/
+.menu .content {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+/*End of Section Menu*/
 
-/*15:00 scroll behavior resolvido!
-lance no anki o exercício de faze a seção about!
-/
+/*18:00
