@@ -19,7 +19,7 @@ header {
     justify-content: space-between;
     width: 100%;
     position: absolute;
-    padding: 4rem 8rem;
+    padding: 5rem 10rem;
     top: 0;
     left: 0;
 }
@@ -99,7 +99,7 @@ header #toggle:after {
 .content h2 {
     font-size: 4rem;
     color: #fff;
-    margin-bottom: 2.5rem;
+    margin: 2.5rem 0;
 }
 
 .content h2 span {
@@ -199,9 +199,68 @@ nav ul li a {
     display: inline-block;
     font-weight: 600;
     text-transform: uppercase;
+    margin: 1.5rem 0;
 }
 /*End of Nav*/
-@media(max-width: 767px) {
+/*Responsive Design*/
+@media(max-width: 910px) {
+    .socialMedia {
+        flex-direction: row;
+        bottom: 3rem;
+        left: 10rem;
+    }
+
+    .socialMedia li a {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+}
+@media(max-width: 768px) {
+    header {
+        padding: 3rem 5rem;
+    }
+
+    .banner {
+        padding: 10rem 5rem;
+    }
+
+    .banner.active {
+        transform: translateX(-25rem);
+    }
+
+    .content a {
+        margin-top: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    nav {
+        width: 25rem;
+    }
+
+    nav ul li a {
+        font-size: 2.5rem;
+        margin: .6rem 0;
+    }
+
+    .socialMedia {
+        flex-direction: row;
+        bottom: 4rem;
+        left: 5rem;
+    }
+
+    .socialMedia li a {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+}
+
+@media(max-width: 537px) {
+
+    .socialMedia {
+        bottom: 3rem;
+    }
 
 }
 
