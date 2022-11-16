@@ -17,6 +17,7 @@
                 <a href="#testimonials">Testimonials</a>
                 <a href="#contact">Contact</a>
             </nav>
+            <div class="menuToggle" onclick="toggleMenu()"></div>
         </header>
         <main>
             <!--Home-->
@@ -226,18 +227,34 @@
             <section class="contact" id="contact">
                 <div class="title">
                     <h2 class="titleText">
-                        <span>C</span>ontact
+                        <span>C</span>ontact Us
                     </h2>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
                     </p>
                 </div>
-                <div class="">
-
-                </div>
+                <div class="contactForm">
+                    <h3>Send Message</h3>
+                    <div class="inputBox">
+                        <input type="text" placeholder="Your name" required/>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" placeholder="Your email" required/>
+                    </div>
+                    <div class="inputBox">
+                        <textarea placeholder="Describe what you need"></textarea>
+                    </div>
+                    <div class="inputBox">
+                        <input type="submit" value="Send"/>
+                    </div>
             </section>
             <!--End of Section Contact-->
         </main>
+        <!--Footer-->
+        <footer class="copyrightText">
+            <p>Copyright 2022 <a href="http://arthurguilherme.com/">Arthur Guilherme</a>. All right Reserved</p>
+        </footer>
+        <!--End of Footer-->
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -69,6 +69,10 @@ header #navigation {
     display: flex;
 }
 
+header #menuToggle {
+    display: none;
+}
+
 header #navigation a {
     margin-left: 3rem;
     text-decoration: none;
@@ -324,6 +328,102 @@ header.sticky #navigation a {
     font-size: 1.7rem;
 }
 /*End of Section Testimonials*/
-/*27:50 Contact*/
+/*Contact*/
+.contact {
+    background-image: url(imgs/bg3.jpg);
+    background-size: cover;
+}
 
+.contact .contactForm {
+    background-color: #fff;
+    padding: 7.5rem 5rem;
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.1);
+    max-width: 50rem;
+    margin-top: 5rem;
+}
+
+.contact .contactForm h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 2rem;
+}
+
+.contact .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.contact .contactForm .inputBox input, .contact .contactForm .inputBox textarea {
+    width:100%;
+    border: 1px solid #555;
+    padding: 1rem;
+    color: #111;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 300;
+    border-radius: .6rem;
+    resize: none;
+}
+
+.contact .contactForm .inputBox input[type="submit"] {
+    background-color: #ff0157;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    transition: .6s;
+    max-width: 10rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
 /*End of Section Contact*/
+/*Footer*/
+.copyrightText {
+    padding: .8rem 4rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+.copyrightText a {
+    color: #ff0157;
+    text-decoration: none;
+    font-weight: 500;
+}
+/*End of Footer*/
+
+@media (max-width: 1000px) {
+
+    header, header.sticky {
+        padding: 1rem 2rem;
+    }
+
+    header #navigation {
+        display: none;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        background-image: url(imgs/menu.png);
+        background-size: 3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active {
+        color: #111;
+    }
+
+}
+/*36:00*/
