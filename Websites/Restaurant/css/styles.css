@@ -16,7 +16,7 @@ html {
 p {
     font-weight: 300;
     color: #111;
-    font-size: 1.6rem;
+    font-size: 2rem;
 }
 
 a {
@@ -399,8 +399,17 @@ header.sticky #navigation a {
     font-weight: 500;
 }
 /*End of Footer*/
-
+/*Responsive Design*/
 @media (max-width: 1000px) {
+    /*General*/
+    section {
+        padding: 5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+    /*End of General*/
 
     header, header.sticky {
         padding: 1rem 2rem;
@@ -408,6 +417,35 @@ header.sticky #navigation a {
 
     header #navigation {
         display: none;
+    }
+
+    header #navigation.active {
+        width: 100%;
+        height: calc(100% - 6.8rem);
+        position: fixed;
+        top: 6.8rem;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    header #navigation.active a {
+        color: #111;
+        font-weight: 500;
+        font-size: 3rem;
+        margin-top: 1rem;
+        scale:1;
+        transition: .6s;
+    }
+
+
+    header #navigation.active a:hover{
+        color: #ff0157;
+        scale: 1.04;
     }
 
     .menuToggle {
@@ -419,11 +457,40 @@ header.sticky #navigation a {
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
+        transition: .4s;
     }
 
     .menuToggle.active {
-        color: #111;
+        background-image: url(imgs/close.png);
+        background-size: 2.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
     }
 
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    /*Initial Section*/
+    .home .content h2 {
+        font-size: 5rem;
+     }
+
+     .row {
+        flex-direction: column;
+     }
+
+     .row .col50 {
+        width: 100%;
+    }
+
+    .row .col50 .imgBox {
+        margin-top: 2rem;
+        height: 30rem;
+    }
+    /*End Initial Section*/
+
 }
+/*End of Responsive Design*/
 /*36:00*/
