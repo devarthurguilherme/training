@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+p {
+    font-weight: 300;
+    color: #111;
+    font-size: 2rem;
+}
+
+a {
+    font-size: 2rem;
+}
+
+section {
+    padding: 10rem;
+}
+/*End of General*/
+/*Header*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 10rem;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+header.sticky {
+    background-color: #fff;
+    padding: 1rem 10rem;
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.05);
+}
+
+header #logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 3.2rem;
+    transition: .5s;
+}
+
+header.sticky #logo {
+    color: #111;
+}
+
+header #logo span {
+    color: #ff0158;
+}
+
+header #navigation {
+    position: relative;
+    display: flex;
+}
+
+header #menuToggle {
+    display: none;
+}
+
+header #navigation a {
+    margin-left: 3rem;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    transition: .5s;
+    scale: 1;
+}
+
+header #navigation a:hover {
+    color: #ff0157;
+    scale: 1.04;
+}
+
+header.sticky #navigation a {
+    color: #111;
+    font-weight: 500;
+}
+/*End of Header*/
+/*Initial Section*/
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imgs/bg.jpg);
+    background-size: cover;
+}
+
+.home .content {
+    max-width: 90rem;
+    text-align: center;
+}
+
+.home .content h2 {
+    font-size: 8rem;
+    color: #fff;
+}
+
+.home .content p {
+    color: #fff;
+}
+
+.btn {
+    font-size: 1.6rem;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff0157;
+    display: inline-block;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    border-radius: .4rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    letter-spacing: .6rem;
+}
+/*End of Initial Section*/
+/*Section About*/
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.titleText {
+    color: #111;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+.titleText span {
+    color: #ff0157;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.row .col50 .imgBox {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+}
+
+.row .col50 .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*End of Section About*/
+/*Section Menu*/
+.menu .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+.menu .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top:4rem;
+}
+
+.menu .content .box {
+    width: 34rem;
+    margin: 2rem;
+    border: 1.5rem solid #fff;
+    box-shadow: 0 .5rem 3.5rem rgba(0, 0, 0, 0.09);
+}
+
+.menu .content .box .imgBox {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+}
+
+.menu .content .box .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu .content .box .text {
+    padding: 1.5rem 0 .5rem;
+}
+
+.menu .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+/*End of Section Menu*/
+/*Section Expert*/
+.expert .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:4rem;
+}
+
+.expert .content .box {
+    width: 25rem;
+    margin: 1.5rem;
+}
+
+.expert .content .box .imgBox {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+}
+
+.expert .content .box .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .box .text {
+    padding: 1.5rem 0 .5rem;
+}
+
+.menu .content .box .text h3 {
+    font-weight: 400;
+    color: #111;
+}
+/*End of Section Expert*/
+/*Section Testmonials*/
+.testimonials {
+    background-image: url(imgs/bg2.jpg);
+    background-size: cover;
+}
+
+.testimonials .title .titleText, .testimonials .title p {
+    color: #fff;
+}
+
+.testimonials .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:4rem;
+}
+
+.testimonials .content .box {
+    width: 34rem;
+    margin: 2rem;
+    padding: 4rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials .content .box .imgBox {
+    position: relative;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimonials .content .box .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .content .box .text {
+    text-align: center;
+}
+
+.testimonials .content .box .text p {
+    color: #666;
+    font-style: italic;
+}
+
+.testimonials .content .box .text h3 {
+    margin-top: 2rem;
+    color: #ff0157;
+    font-size: 1.7rem;
+}
+/*End of Section Testimonials*/
+/*Contact*/
+.contact {
+    background-image: url(imgs/bg3.jpg);
+    background-size: cover;
+}
+
+.contact .contactForm {
+    background-color: #fff;
+    padding: 7.5rem 5rem;
+    box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.1);
+    max-width: 50rem;
+    margin-top: 5rem;
+}
+
+.contact .contactForm h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #111;
+    margin-bottom: 2rem;
+}
+
+.contact .contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.contact .contactForm .inputBox input, .contact .contactForm .inputBox textarea {
+    width:100%;
+    border: 1px solid #555;
+    padding: 1rem;
+    color: #111;
+    outline: none;
+    font-size: 1.6rem;
+    font-weight: 300;
+    border-radius: .6rem;
+    resize: none;
+}
+
+.contact .contactForm .inputBox input[type="submit"] {
+    background-color: #ff0157;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    transition: .6s;
+    max-width: 10rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+/*End of Section Contact*/
+/*Footer*/
+.copyrightText {
+    padding: .8rem 4rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyrightText p {
+    color: #333;
+}
+
+.copyrightText a {
+    color: #ff0157;
+    text-decoration: none;
+    font-weight: 500;
+}
+/*End of Footer*/
+/*Responsive Design*/
+@media (max-width: 1000px) {
+    /*General*/
+    section {
+        padding: 5rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+    /*End of General*/
+    header, header.sticky {
+        padding: 1rem 2rem;
+    }
+
+    header #navigation {
+        display: none;
+    }
+
+    header #navigation.active {
+        width: 100%;
+        height: calc(100% - 6.8rem);
+        position: fixed;
+        top: 6.8rem;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    header #navigation.active a {
+        color: #111;
+        font-weight: 500;
+        font-size: 3rem;
+        margin-top: 1rem;
+        scale:1;
+        transition: .6s;
+    }
+
+
+    header #navigation.active a:hover{
+        color: #ff0157;
+        scale: 1.04;
+    }
+
+    .menuToggle {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        background-image: url(imgs/menu.png);
+        background-size: 3rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        transition: .4s;
+    }
+
+    .menuToggle.active {
+        background-image: url(imgs/close.png);
+        background-size: 2.5rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+
+    /*Initial Section*/
+    .home .content h2 {
+        font-size: 5rem;
+     }
+
+     .row {
+        flex-direction: column;
+     }
+
+     .row .col50 {
+        width: 100%;
+    }
+
+    .row .col50 .imgBox {
+        margin-top: 2rem;
+        height: 30rem;
+    }
+    /*End Initial Section*/
+    /*About*/
+    .titleText{
+        font-size: 3.5rem;
+    }
+
+    .titleText span {
+        font-size: 6rem;
+    }
+    /*End of About*/
+    /*Menu*/
+    .menu .content {
+        margin-top: 2rem;
+    }
+
+    .menu .content .box {
+        margin: 1rem;
+    }
+
+    .menu .content .box .imgBox {
+        height: 27rem;
+    }
+    /*End of Menu*/
+    /*Expert*/
+    .titleText {
+        text-align: center;
+        line-height: 5.2rem;
+        margin-bottom: 2rem;
+    }
+    /*End of Expert*/
+    /*Testimonials*/
+    .testimonials .content .box {
+        padding: 2rem;
+    }
+    /*End of Testimonials*/
+    /*Contact*/
+    .contact .contactForm {
+        padding: 3.5rem 2rem;
+        margin-bottom: 3rem;
+    }
+    /*End of Contact*/
+
+}
+/*End of Responsive Design*/
+/*36:00*/
