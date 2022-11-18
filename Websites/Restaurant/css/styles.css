@@ -150,7 +150,7 @@ header.sticky #navigation a {
 
 .titleText {
     color: #111;
-    font-size: 2em;
+    font-size: 3em;
     font-weight: 300;
 }
 
@@ -410,7 +410,6 @@ header.sticky #navigation a {
         font-size: 2rem;
     }
     /*End of General*/
-
     header, header.sticky {
         padding: 1rem 2rem;
     }
@@ -490,6 +489,46 @@ header.sticky #navigation a {
         height: 30rem;
     }
     /*End Initial Section*/
+    /*About*/
+    .titleText{
+        font-size: 3.5rem;
+    }
+
+    .titleText span {
+        font-size: 6rem;
+    }
+    /*End of About*/
+    /*Menu*/
+    .menu .content {
+        margin-top: 2rem;
+    }
+
+    .menu .content .box {
+        margin: 1rem;
+    }
+
+    .menu .content .box .imgBox {
+        height: 27rem;
+    }
+    /*End of Menu*/
+    /*Expert*/
+    .titleText {
+        text-align: center;
+        line-height: 5.2rem;
+        margin-bottom: 2rem;
+    }
+    /*End of Expert*/
+    /*Testimonials*/
+    .testimonials .content .box {
+        padding: 2rem;
+    }
+    /*End of Testimonials*/
+    /*Contact*/
+    .contact .contactForm {
+        padding: 3.5rem 2rem;
+        margin-bottom: 3rem;
+    }
+    /*End of Contact*/
 
 }
 /*End of Responsive Design*/
