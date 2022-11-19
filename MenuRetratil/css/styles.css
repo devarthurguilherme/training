@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #040405;
+}
+
+/*End of General*/
+/*Side Navigation*/
+nav {
+    width: 25rem;
+    height: 100vh;
+    background-color: #111;
+}
+
+p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+i {
+    color: #fff;
+    font-size: 3rem;
+}
+
+#menuBtn {
+    display: flex;
+    justify-content: end;
+    padding: 2rem .5rem;
+}
+
+#menuBtn .fa-solid {
+    padding: 0 1.2rem;
+    min-width: 6rem;
+    max-width: 6rem;
+    flex: 1;
+    cursor: pointer;
+}
+
+.menuOption {
+    height: 6rem;
+    width: 100%;
+    border-bottom: .5px solid #2C272F;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+    padding-left: .5rem;
+}
+
+.menuOption:hover {
+    padding-left: 1rem; 
+    background-color: #2C272F;
+}
+
+.menuOption .text {
+    flex: 5;
+    padding-left: 3rem;
+}
+
+.hidden {
+    width: 6rem;
+}
+
+.hidden .text {
+    display: none;
+}
+
+.hidden #menuBtn {
+    transform: rotate(180deg);
+}
+/*End of Side Navigation*/
+
+
