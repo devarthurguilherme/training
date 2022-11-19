@@ -1,8 +1,12 @@
-let arrow = document.querySelector("#menuBtn i");
-let container = document.querySelector("#container");
+let arrow = document.querySelector(".fa-solid fa-arrow-right");
+let container = document.querySelector(".container");
 
-//24:00
+function arrowBtn() {
 
+    if(!container.classList.contains("hidden")) {
+        container.classList.add("hidden");
+    } else {
+        container.classList.remove("hidden");
+    };
 
-
-console.log(container)
+};
