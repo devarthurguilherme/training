@@ -4,257 +4,231 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
-        <title>Website Responsive</title>
+        <title>Portfolio - Arthur Guilherme</title>
     </head>
     <body>
-        <header>
-            <a id="logo"href="#">Food<span>.</span></a>
-            <nav id="navigation">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#menu">Menu</a>
-                <a href="#expert">Expert</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="menuToggle" onclick="toggleMenu()"></div>
-        </header>
-        <main>
-            <!--Home-->
-            <div class= home id="home">
-                <div class="content">
-                    <h2>Always Choose Good</h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
-                        type and scrambled it.
-                    </p>
-                    <a class="btn" href="#about">Our Menu</a>
+        <div id="mainContainer">
+            <!--Side Navigation-->
+            <nav class="container hidden" >
+                <div id="menuBtn">
+                    <i class="fa-solid fa-arrow-left" onclick="arrowBtn()"></i>
                 </div>
-            </div>
-            <!--End of Section Home-->
-            <!--Section About-->
-            <section class="about" id="about">
-                <div class="row">
-                    <div class="col50">
-                        <h2 class="titleText"><span>A</span>bout</h2>
+                <a href="#home">
+                    <div class="menuOption">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="text">Home</div>
+                    </div>
+                </a>
+                <a href="#aboutMe">
+                    <div class="menuOption">
+                        <i class="fa-solid fa-user-large"></i>
+                        <div class="text">Arthur Guilherme</div>
+                    </div>
+                </a>
+                <a href="#projects">
+                    <div class="menuOption">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <div class="text">Projetos</div>
+                    </div>
+                </a>
+                <a href="#knowledges">
+                    <div class="menuOption">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div class="text">Conhecimentos</div>
+                    </div>
+                </a>
+            </nav>
+            <!--End of Side Navigation-->
+            <!--MainContent-->
+            <div id="mainContent">
+                <!--Home-->
+                <div id="home">
+                    <div id="content">
+                        <h1>Frontend Developer</h1>
+                        <h2>Arthur Guilherme</h2>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
-                        type and scrambled it. Dummy text ever since the 1500s, when an unknown printer took a galley of 
-                        type and scrambled it
-                        <br />
-                        <br />
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
-                        type and scrambled it. Dummy text ever since the 1500s, when an unknown printer took a galley of 
-                        type and scrambled it
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it.
+                        </p>
+                        <a class="btn" href="#"><i class="fa-brands fa-github"></i>Git Hub</a>
+                    </div>
+                </div>
+                <!--End of Home-->
+                <!--About Me-->
+                <section class="aboutMe" id="aboutMe">
+                    <div class="row">
+                        <div class="col50">
+                            <h2 class="titleText"><span>A</span>rthur Guilherme</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it. Dummy text ever since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it
+                            <br />
+                            <br />
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it. Dummy text ever since the 1500s, when an unknown printer took a galley of 
+                            type and scrambled it
+                            </p>
+                        </div>
+                        <div class="col50">
+                            <div class="imgBox">
+                                <img src="./css/imgs/img1.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End of About Me-->
+                <!--Projects-->
+                <section id="projects">
+                    <ul>
+                        <li class="list active" data-filter="all">All</li>
+                        <li class="list" data-filter="mobile">Mobile</li>
+                        <li class="list" data-filter="camera">Camera</li>
+                        <li class="list" data-filter="watch">Watch</li>
+                        <li class="list" data-filter="shoe">Shoe</li>
+                        <li class="list" data-filter="headphone">HeadePhone</li>
+                    </ul>
+                    <div class="product">
+                        <div class="itemBox" data-item="mobile">
+                            <img src="imgs/mobile1.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="camera">
+                            <img src="imgs/camera1.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="watch">
+                            <img src="imgs/watch1.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="shoe">
+                            <img src="imgs/shoe1.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="headphone">
+                            <img src="imgs/headphone1.jpg" />
+                        </div>
+        
+                        <div class="itemBox" data-item="mobile">
+                            <img src="imgs/mobile2.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="camera">
+                            <img src="imgs/camera2.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="watch">
+                            <img src="imgs/watch2.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="shoe">
+                            <img src="imgs/shoe2.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="headphone">
+                            <img src="imgs/headphone2.jpg" />
+                        </div>
+        
+                        <div class="itemBox" data-item="mobile">
+                            <img src="imgs/mobile3.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="camera">
+                            <img src="imgs/camera3.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="watch">
+                            <img src="imgs/watch3.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="shoe">
+                            <img src="imgs/shoe3.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="headphone">
+                            <img src="imgs/headphone3.jpg" />
+                        </div>
+        
+                        <div class="itemBox" data-item="mobile">
+                            <img src="imgs/mobile4.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="camera">
+                            <img src="imgs/shoe4.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="watch">
+                            <img src="imgs/watch4.jpg" />
+                        </div>
+                        <div class="itemBox" data-item="headphone">
+                            <img src="imgs/headphone4.jpg" />
+                        </div>
+        
+                        <div class="itemBox" data-item="mobile">
+                            <img src="imgs/mobile5.jpg" />
+                        </div>
+                    </div>
+                </section>
+                <!--End of Projects-->
+                <!--Knowledges-->
+                <section class="menu" id="knowledges">
+                    <div class="title">
+                        <h2 class="titleText">
+                            Our <span>M</span>enu
+                        </h2>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
                         </p>
                     </div>
-                    <div class="col50">
-                        <div class="imgBox">
-                            <img src="./css/imgs/img1.jpg" />
+                    <div class="contentKnowledge">
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./css/imgs/menu1.jpg" />
+                            </div>
+                            <div class="text">
+                                <h3>Saladas Especiais</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./css/imgs/menu2.jpg" />
+                            </div>
+                            <div class="text">
+                                <h3>Sopas Especiais</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./css/imgs/menu3.jpg" />
+                            </div>
+                            <div class="text">
+                                <h3>Pasta Especial</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./css/imgs/menu4.jpg" />
+                            </div>
+                            <div class="text">
+                                <h3>Saladas Especiais</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./css/imgs/menu5.jpg" />
+                            </div>
+                            <div class="text">
+                                <h3>Sopas Especiais</h3>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBox">
+                                <img src="./css/imgs/menu6.jpg" />
+                            </div>
+                            <div class="text">
+                                <h3>Pasta Especial</h3>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <a href="#" class="btn">Veja Todos</a>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!--End of Section About-->
-            <!--Section Menu-->
-            <section class="menu" id="menu">
-                <div class="title">
-                    <h2 class="titleText">
-                        Our <span>M</span>enu
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
-                    </p>
-                </div>
-                <div class="content">
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/menu1.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Saladas Especiais</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/menu2.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Sopas Especiais</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/menu3.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Pasta Especial</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/menu4.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Saladas Especiais</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/menu5.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Sopas Especiais</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/menu6.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Pasta Especial</h3>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <a href="#" class="btn">Veja Todos</a>
-                    </div>
-                </div>
-            </section>
-            <!--End of Section Menu-->
-            <!--Section Expert-->
-            <section class="expert" id="expert">
-                <div class="title">
-                    <h2 class="titleText">
-                        Our Kitchen <span>E</span>xpert
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
-                    </p>
-                </div>
-                <div class="content">
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/expert1.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Someone Famous</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/expert2.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Someone Famous</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/expert3.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Someone Famous</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/expert4.jpg" />
-                        </div>
-                        <div class="text">
-                            <h3>Someone Famous</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--End of Section Expert-->
-            <!--Section Testimonials-->
-            <section class="testimonials" id="testimonials">
-                <div class="title">
-                    <h2 class="titleText">
-                        They <span>S</span>aid about us
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
-                    </p>
-                </div>
-                <div class="content">
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/testi1.jpg" />
-                        </div>
-                        <div class="text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.It is a long established 
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                                The point of using Lorem Ipsum.
-                            </p>
-                            <h3>Someone Famous</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/testi2.jpg" />
-                        </div>
-                        <div class="text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.It is a long established 
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                                The point of using Lorem Ipsum.
-                            </p>
-                            <h3>Someone Famous</h3>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="imgBox">
-                            <img src="./css/imgs/testi3.jpg" />
-                        </div>
-                        <div class="text">
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.It is a long established 
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                                The point of using Lorem Ipsum.
-                            </p>
-                            <h3>Someone Famous</h3>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--End of Section Testimonials-->
-            <!--Section Contact-->
-            <section class="contact" id="contact">
-                <div class="title">
-                    <h2 class="titleText">
-                        <span>C</span>ontact Us
-                    </h2>
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
-                    </p>
-                </div>
-                <div class="contactForm">
-                    <h3>Send Message</h3>
-                    <div class="inputBox">
-                        <input type="text" placeholder="Your name" required/>
-                    </div>
-                    <div class="inputBox">
-                        <input type="email" placeholder="Your email" required/>
-                    </div>
-                    <div class="inputBox">
-                        <textarea placeholder="Describe what you need"></textarea>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" value="Send"/>
-                    </div>
-            </section>
-            <!--End of Section Contact-->
-        </main>
-        <!--Footer-->
-        <footer class="copyrightText">
-            <p>Copyright 2022 <a href="http://arthurguilherme.com/">Arthur Guilherme</a>. All right Reserved</p>
-        </footer>
-        <!--End of Footer-->
+                </section>
+                <!--End of Knowledges-->
+            <!--End of MainContent-->
+        </div>
         <script src="js/script.js"></script>
+        <!--FontAwesome-->
+       <script src="https://kit.fontawesome.com/7dd89e9631.js" crossorigin="anonymous"></script>
+       <!--End-FontAwesome-->
     </body>
 </html>
