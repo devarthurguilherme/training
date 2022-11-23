@@ -22,7 +22,7 @@
                 <a href="#aboutMe">
                     <div class="menuOption">
                         <i class="fa-solid fa-user-large"></i>
-                        <div class="text">Arthur Guilherme</div>
+                        <div class="text">Quem sou</div>
                     </div>
                 </a>
                 <a href="#projects">
@@ -44,8 +44,8 @@
                 <!--Home-->
                 <div id="home">
                     <div id="content">
-                        <h1>Frontend Developer</h1>
-                        <h2>Arthur Guilherme</h2>
+                        <h1>Arthur Guilherme</h1>
+                        <h2>Frontend Developer</h2>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
                             the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
@@ -57,8 +57,8 @@
                 <!--End of Home-->
                 <!--About Me-->
                 <section class="aboutMe" id="aboutMe">
-                    <div class="row">
-                        <div class="col50">
+                    <div class="aboutMeBox">
+                        <div class="divAboutMe">
                             <h2 class="titleText"><span>A</span>rthur Guilherme</h2>
                             <p>
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
@@ -73,7 +73,7 @@
                             type and scrambled it
                             </p>
                         </div>
-                        <div class="col50">
+                        <div class="divAboutMe">
                             <div class="imgBox">
                                 <img src="./css/imgs/img1.jpg" />
                             </div>
@@ -82,148 +82,96 @@
                 </section>
                 <!--End of About Me-->
                 <!--Projects-->
-                <section id="projects">
-                    <ul>
-                        <li class="list active" data-filter="all">All</li>
-                        <li class="list" data-filter="mobile">Mobile</li>
-                        <li class="list" data-filter="camera">Camera</li>
-                        <li class="list" data-filter="watch">Watch</li>
-                        <li class="list" data-filter="shoe">Shoe</li>
-                        <li class="list" data-filter="headphone">HeadePhone</li>
-                    </ul>
-                    <div class="product">
-                        <div class="itemBox" data-item="mobile">
-                            <img src="imgs/mobile1.jpg" />
+            <section id="projects">
+                <ul>
+                    <li class="list active" data-filter="all"><span>Todos</span></li>
+                    <li class="list" data-filter="vanillaJs">
+                        <div class="galleryIcons">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
                         </div>
-                        <div class="itemBox" data-item="camera">
-                            <img src="imgs/camera1.jpg" />
+                    </li>
+                    <li class="list" data-filter="reactJs">
+                        <div class="galleryIcons">
+                            <i class="fa-brands fa-react"></i>
                         </div>
-                        <div class="itemBox" data-item="watch">
-                            <img src="imgs/watch1.jpg" />
+                    </li>
+                    <li class="list" data-filter="wordPressElementor">
+                        <div class="galleryIcons">
+                            <i class="fa-brands fa-wordpress"></i>
+                            <i class="fa-brands fa-elementor"></i>
                         </div>
-                        <div class="itemBox" data-item="shoe">
-                            <img src="imgs/shoe1.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="headphone">
-                            <img src="imgs/headphone1.jpg" />
-                        </div>
-        
-                        <div class="itemBox" data-item="mobile">
-                            <img src="imgs/mobile2.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="camera">
-                            <img src="imgs/camera2.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="watch">
-                            <img src="imgs/watch2.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="shoe">
-                            <img src="imgs/shoe2.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="headphone">
-                            <img src="imgs/headphone2.jpg" />
-                        </div>
-        
-                        <div class="itemBox" data-item="mobile">
-                            <img src="imgs/mobile3.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="camera">
-                            <img src="imgs/camera3.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="watch">
-                            <img src="imgs/watch3.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="shoe">
-                            <img src="imgs/shoe3.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="headphone">
-                            <img src="imgs/headphone3.jpg" />
-                        </div>
-        
-                        <div class="itemBox" data-item="mobile">
-                            <img src="imgs/mobile4.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="camera">
-                            <img src="imgs/shoe4.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="watch">
-                            <img src="imgs/watch4.jpg" />
-                        </div>
-                        <div class="itemBox" data-item="headphone">
-                            <img src="imgs/headphone4.jpg" />
-                        </div>
-        
-                        <div class="itemBox" data-item="mobile">
-                            <img src="imgs/mobile5.jpg" />
-                        </div>
+                    </li>
+                    <li class="list" data-filter="others"><span>Outros</span></li>
+                </ul>
+                <div class="projectBox">
+                    <div class="itemBox" data-item="vanillaJs">
+                        <img src="imgs/mobile1.jpg" />
+                        <div class="imgOverlay"></div>
                     </div>
-                </section>
-                <!--End of Projects-->
+                    <div class="itemBox" data-item="reactJs">
+                        <img src="imgs/camera1.jpg" />
+                        <div class="imgOverlay"></div>
+                    </div>
+                    <div class="itemBox" data-item="wordPressElementor">
+                        <img src="imgs/watch1.jpg" />
+                        <div class="imgOverlay"></div>
+                    </div>
+                    <div class="itemBox" data-item="others">
+                        <img src="imgs/shoe1.jpg" />
+                        <div class="imgOverlay"></div>
+                    </div>
+                </div>
+            </section>
+            <!--End of Projects-->
                 <!--Knowledges-->
                 <section class="menu" id="knowledges">
-                    <div class="title">
+                    <div class="titleSection">
                         <h2 class="titleText">
-                            Our <span>M</span>enu
+                            <span>C</span>onhecimentos
                         </h2>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
                         </p>
                     </div>
-                    <div class="contentKnowledge">
-                        <div class="box">
-                            <div class="imgBox">
-                                <img src="./css/imgs/menu1.jpg" />
-                            </div>
-                            <div class="text">
-                                <h3>Saladas Especiais</h3>
-                            </div>
+                    <div class="aboutMeBox">
+                        <div class="divAboutMe">
+                            <h2 class="titleText"><span>R</span>eact Developer</h2>
+                            <p>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of 
+                                type and scrambled it. Dummy text ever since the 1500s, when an unknown printer took a galley of 
+                                type and scrambled it.
+                            </p>
                         </div>
-                        <div class="box">
-                            <div class="imgBox">
-                                <img src="./css/imgs/menu2.jpg" />
-                            </div>
-                            <div class="text">
-                                <h3>Sopas Especiais</h3>
-                            </div>
+                        <div class="divAboutMe">
+                            <ul class="knowledgeIcons">
+                                <li>
+                                    <i class="fa-brands fa-html5"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-js"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-react"></i>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="box">
-                            <div class="imgBox">
-                                <img src="./css/imgs/menu3.jpg" />
-                            </div>
-                            <div class="text">
-                                <h3>Pasta Especial</h3>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBox">
-                                <img src="./css/imgs/menu4.jpg" />
-                            </div>
-                            <div class="text">
-                                <h3>Saladas Especiais</h3>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBox">
-                                <img src="./css/imgs/menu5.jpg" />
-                            </div>
-                            <div class="text">
-                                <h3>Sopas Especiais</h3>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBox">
-                                <img src="./css/imgs/menu6.jpg" />
-                            </div>
-                            <div class="text">
-                                <h3>Pasta Especial</h3>
-                            </div>
-                        </div>
-                        <div class="title">
-                            <a href="#" class="btn">Veja Todos</a>
-                        </div>
-                    </div>
                 </section>
                 <!--End of Knowledges-->
+                <!--Footer-->
+                <footer>
+                    <div id="endPage">
+                        <a href="#">Políticas de Privacidade</a>
+                        <a href="#">Termos e Condições</a>
+                        <p>© 2022 arthurguilherme.com</p>
+                    </div>
+                </footer>
+                <!--End of Footer-->
             <!--End of MainContent-->
         </div>
         <script src="js/script.js"></script>
