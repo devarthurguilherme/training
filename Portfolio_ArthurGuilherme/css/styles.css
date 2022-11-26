@@ -13,6 +13,10 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    background-color: #040405;
+}
+
 h1 {
     font-size: 8rem;
     color: #fff;
@@ -241,7 +245,7 @@ i {
 
 #projects ul li {
     list-style: none;
-    background-color: #eee;
+    background-color: #482EF3;
     padding: .7rem 2rem;
     margin: .5rem;
     letter-spacing: .2rem;
@@ -254,11 +258,11 @@ i {
 
 #projects ul li span {
     font-size: 2rem;
+    color: #fff;
 }
 
 #projects ul li.active {
-    background-color: #482EF3;
-    color: #fff;
+    background-color: #0D0D3F;
 }
 
 .projectBox {
@@ -324,7 +328,7 @@ i {
     margin-bottom: 5rem;
 }
 
-.knowledgeIcons {
+.skillIcons {
     position: relative;
     width: 100%;
     min-height: 100%;
@@ -336,7 +340,7 @@ i {
     list-style: none;
 }
 
-.knowledgeIcons i {
+.skillIcons i {
     font-size: 10rem;
     color: #0577BE;
     padding: 2rem;
@@ -348,21 +352,95 @@ footer {
 }
 
 footer div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     padding: 2rem 10rem;
     background-color: #111;
+    display: flex;
+    justify-content: center;
     
 }
 
-footer div a {
-    text-decoration: none;
-    color: #fff;
-}
-
 footer div p {
+    color:#FFF;
     font-size: 1rem;
 }
 /*End of Footer*/
+/*Responsive Design*/
+
+    @media (min-width: 1500px) {
+       #aboutMe {
+        max-width: 140rem;
+       }
+       #projects {
+        max-width: 140rem;
+       }
+       #skills {
+        max-width: 140rem;
+       }
+    }
+    @media (max-width: 768px) {
+
+        /*General*/
+        section {
+            padding: 6rem;
+        }
+        /*End of General*/
+        /*Home*/
+        #content {
+            padding: 0 6rem;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-top: -1rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+        }
+        /*End of Home*/
+        /*About Me*/
+        .aboutMeBox {
+            flex-direction: column-reverse;
+        }
+
+        .aboutMeBox .divAboutMe {
+            width: 100%;
+        }
+
+        .titleText {
+            font-size: 4em;
+            margin-bottom: 1rem;
+            text-align: center;
+         }
+
+         .titleText span {
+            font-size: 5rem;
+        }
+
+        .aboutMeBox .divAboutMe .imgBox img {
+            position: relative;
+            height: auto;
+            padding-bottom: 4rem
+        }
+        /*End of About Me*/
+        /*Projects*/
+        .titleSection p {
+            text-align: center;
+        }
+        /*End of Projects*/
+        /*Skills*/
+        #skills .aboutMeBox {
+            flex-direction: column;
+        }
+
+        #skills .aboutMeBox .divAboutMe {
+            padding-bottom: 2rem;
+        }
+        /*End of Skill*/
+    }
+/*End of Responsive Design*/
 
