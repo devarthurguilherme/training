@@ -211,17 +211,19 @@ i {
 .aboutMeBox .divAboutMe .imgBox {
     position: relative;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: flex-end;
+    
 }
 
 .aboutMeBox .divAboutMe .imgBox img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: 0.5rem;
 }
+
 /*End of About Me*/
 /*Projects*/
 #projects {
@@ -271,12 +273,13 @@ i {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .projectBox .itemBox {
     position: relative;
     width: 30rem;
-    height: 40rem;
+    height: 30rem;
     margin: .5rem;
     /*display:block;*/
 }
@@ -291,6 +294,7 @@ i {
     left: 0;
     width: 100%;
     height: 100%;
+    /*height: auto;*/
     object-fit: cover;
     border-radius: 1rem;
 }
@@ -309,11 +313,13 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: .5rem;
   }
 
   .projectBox .itemBox:hover .imgOverlay {
     bottom: 0;
     height: 100%;
+    /*height:30rem;*/
   }
 
   .projectBox .itemBox .imgOverlay h4 {
@@ -349,6 +355,11 @@ i {
     justify-content: center;
     align-items: center;
     margin-bottom: 5rem;
+}
+
+#skills .aboutMeBox .divAboutMe {
+    /* position: relative; */
+    width: 100%;
 }
 
 .skillIcons {
@@ -399,6 +410,29 @@ footer div p {
        #skills {
         max-width: 140rem;
        }
+    }
+
+    @media (max-width: 1024px) {
+        .aboutMeBox {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .aboutMeBox .divAboutMe {
+            width: 100%;
+        }
+
+        .titleText {
+            text-align: center;
+        }
+
+        .aboutMeBox .divAboutMe .imgBox {
+            display: flex;
+            justify-content: center;
+        }
     }
     @media (max-width: 768px) {
 
@@ -466,10 +500,10 @@ footer div p {
         }
         /*End of Skill*/
 
-        @media (max-width: 425px) {
+    @media (max-width: 425px) {
             /*General*/
             section {
-                padding: 2rem;
+                padding: 1rem 2rem;
             }
             /*End ofGeneral*/
             /*Home*/
@@ -498,6 +532,16 @@ footer div p {
             .titleText {
                 font-size: 3.4rem;
             }
+            
+            .aboutMeBox .divAboutMe p {
+                /* text-align: justify; */
+                padding: 0 1rem;
+            }
+
+            .aboutMeBox .divAboutMe .imgBox img {
+                width: 100%;
+            }
+        
             /*End of About*/
         @media (max-width: 375px) {
             /*About Me*/
@@ -525,6 +569,15 @@ footer div p {
             h1 {
                 font-size: 4rem;
                 line-height: 5rem;
+            }
+
+            .projectBox .itemBox .imgOverlay p {
+                margin-top: 0;
+            }
+
+            .projectBox .itemBox .imgOverlay .btn {
+                width: 8rem;
+                margin-top: 0;
             }
         }
 
