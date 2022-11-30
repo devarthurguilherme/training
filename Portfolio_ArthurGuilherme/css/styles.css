@@ -157,14 +157,14 @@ i {
 }
 
 .btn {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #fff;
     text-decoration: none;
     background-color: #0577BE;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 15rem;
+    width: 25rem;
     padding: 1rem 1rem;
     margin-top: 2rem;
     border-radius: .4rem;
@@ -176,8 +176,14 @@ i {
     margin-right: auto;
 }
 
+.btn:hover {
+    background-color: #1899e9;
+}
+
 .btn i{
     font-size: 2rem;
+    transition: 0.5s;
+    color: #fff;
 }
 /*End of Home*/
 /*About Me*/
@@ -222,6 +228,7 @@ i {
     width: auto;
     height: auto;
     margin: 0.5rem;
+    border-radius: .4rem;
 }
 
 /*End of About Me*/
@@ -247,7 +254,7 @@ i {
 
 #projects ul li {
     list-style: none;
-    background-color: #482EF3;
+    background-color: #0D0D3F;
     padding: .7rem 2rem;
     margin: .5rem;
     letter-spacing: .2rem;
@@ -264,7 +271,7 @@ i {
 }
 
 #projects ul li.active {
-    background-color: #0D0D3F;
+    background-color: #482EF3;
 }
 
 .projectBox {
@@ -413,6 +420,7 @@ footer div p {
     }
 
     @media (max-width: 1024px) {
+        /*About Me*/
         .aboutMeBox {
             position: relative;
             width: 100%;
@@ -433,6 +441,12 @@ footer div p {
             display: flex;
             justify-content: center;
         }
+        /*End of About Me*/
+        /*Skills*/
+        .skillIcons i {
+            font-size: 7rem;
+        }
+        /*End of Skills*/
     }
     @media (max-width: 768px) {
 
@@ -498,6 +512,10 @@ footer div p {
         #skills .aboutMeBox .divAboutMe {
             padding-bottom: 2rem;
         }
+
+        .skillIcons i {
+            font-size: 5rem;
+        }
         /*End of Skill*/
 
     @media (max-width: 425px) {
@@ -544,6 +562,13 @@ footer div p {
         
             /*End of About*/
         @media (max-width: 375px) {
+            /*Home*/
+            .btn {
+                font-size: 1.3rem;
+                width: 22rem;
+            }
+            /*End of Home*/
+
             /*About Me*/
             .titleText {
                 font-size: 2.5rem;
@@ -566,11 +591,13 @@ footer div p {
             /*End of Footer*/
         }
         @media (max-width: 320px){
+            /*Home*/
             h1 {
                 font-size: 4rem;
                 line-height: 5rem;
             }
-
+            /*End of Home*/
+            /*Projects*/
             .projectBox .itemBox .imgOverlay p {
                 margin-top: 0;
             }
@@ -579,6 +606,15 @@ footer div p {
                 width: 8rem;
                 margin-top: 0;
             }
+            /*End of Projects*/
+            /*Skills*/
+            .aboutMeBox .divAboutMe p {
+                text-align: center;
+            }
+            .skillIcons i {
+                font-size: 4.5rem;
+            }
+            /*End of Skills*/
         }
 
     }
