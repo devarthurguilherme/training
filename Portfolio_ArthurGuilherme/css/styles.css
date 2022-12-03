@@ -40,6 +40,50 @@ section {
     padding: 10rem;
 }
 /*End of General*/
+/*To Change Language*/
+.menuOption .unitedKingdom {
+    flex: 1;
+    min-width: 6rem;
+    max-width: 6rem;
+    height: 3rem;
+    position: relative;
+    background-image: url(imgs/logoUnitedKingdom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.menuOption .portugal {
+    flex: 1;
+    min-width: 6rem;
+    max-width: 6rem;
+    height: 3rem;
+    position: relative;
+    background-image: url(imgs/logoPortugal.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.portuguese {
+    opacity: 1;
+    transition:1s;
+    position: absolute;
+}
+
+.english {
+    opacity: 0;
+    transition:1s;
+}
+
+.change .portuguese {
+    opacity: 0;
+    transition:1s;
+}
+
+.change .english {
+    opacity: 1;
+    transition:1s;
+}
+/*End of To Change Language*/
 /*Side Navigation*/
 .container {
     width: 25rem;

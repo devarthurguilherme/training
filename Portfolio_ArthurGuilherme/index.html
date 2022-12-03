@@ -14,46 +14,78 @@
                 <div id="menuBtn">
                     <i class="fa-solid fa-arrow-left" onclick="arrowBtn()"></i>
                 </div>
-                <a href="#home">
-                    <div class="menuOption">
-                        <i class="fa-solid fa-house"></i>
-                        <div class="text">Home</div>
-                    </div>
-                </a>
-                <a href="#aboutMe">
-                    <div class="menuOption">
-                        <i class="fa-solid fa-user-large"></i>
-                        <div class="text">Quem sou</div>
-                    </div>
-                </a>
-                <a href="#projects">
-                    <div class="menuOption">
-                        <i class="fa-solid fa-layer-group"></i>
-                        <div class="text">Projetos</div>
-                    </div>
-                </a>
-                <a href="#skills">
-                    <div class="menuOption">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <div class="text">Habilidades</div>
-                    </div>
-                </a>
-                <a href="https://github.com/arthurguilherme92" target="_blank">
-                    <div class="menuOption">
-                        <i class="fa-solid fa-brands fa-github"></i>
-                        <div class="text">GitHub</div>
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/arthurguilherme92/" target="_blank">
-                    <div class="menuOption">
-                        <i class="fa-solid fa-brands fa-linkedin"></i>
-                        <div class="text">Linkedin</div>
-                    </div>
-                </a>
+                    <a href="#home">
+                        <div class="menuOption">
+                            <i class="fa-solid fa-house"></i>
+                            <div class="text">
+                                <div class="portuguese">Início</div>
+                                <div class="english">Home</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#aboutMe">
+                        <div class="menuOption">
+                            <i class="fa-solid fa-user-large"></i>
+                            <div class="text">
+                                <div class="portuguese">Quem sou</div>
+                                <div class="english">Who I am</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#projects">
+                        <div class="menuOption">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <div class="text">
+                                <div class="portuguese">Projetos</div>
+                                <div class="english">Projects</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#skills">
+                        <div class="menuOption">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <div class="text">
+                                <div class="portuguese">Habilidades</div>
+                                <div class="english">Skills</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://github.com/arthurguilherme92" target="_blank">
+                        <div class="menuOption">
+                            <i class="fa-solid fa-brands fa-github"></i>
+                            <div class="text">
+                                <div class="portuguese">GitHub</div>
+                                <div class="english">GitHub</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/arthurguilherme92/" target="_blank">
+                        <div class="menuOption">
+                            <i class="fa-solid fa-brands fa-linkedin"></i>
+                            <div class="text">
+                                <div class="portuguese">Linkedin</div>
+                                <div class="english">Linkedin</div>
+                            </div>
+                        </div>
+                    </a>
+                    <div>
+                        <div class="menuOption"  onclick="changeLanguage()">
+                            <div class="portuguese">
+                                <div class="unitedKingdom"></div>
+                            </div>
+                            <div class="english">
+                                <div class="portugal"></div>
+                            </div>
+                            <div class="text">
+                                <div class="portuguese">English</div>
+                                <div class="english">Portuguese</div>
+                            </div>
+                        </div>
+                    </div>                
             </nav>
             <!--End of Side Navigation-->
             <!--MainContent-->
-            <div id="mainContent">
+            <div id="mainContent" class="portuguese">
                 <!--Home-->
                 <div id="home">
                     <div id="content">
@@ -62,7 +94,7 @@
                         <p>
                             Conheça tudo o que posso fazer e desenvolver. Estou sempre estudando e aprimorando meus conhecimentos !
                         </p>
-                        <a class="btn" href="download/Curriculum Vitae - Arthur Guilherme.pdf" download="curriculum_vitae_Arthur_Guilherme"><i class="fa-solid fa-download"></i>Curriculum Vitae</a>
+                        <a class="btn" href="download/Curriculum Vitae - Arthur Guilherme.pdf" download="curriculum_vitae_Arthur_Guilherme"><i class="fa-solid fa-download"></i>Currículo</a>
                     </div>
                 </div>
                 <!--End of Home-->
@@ -114,7 +146,7 @@
                     </div>
                     <ul>
                         <li class="list active" data-filter="all"><span>Todos</span></li>
-                        <li class="list" data-filter="vanillaJs"><span>Web Pages</span></li>
+                        <li class="list" data-filter="vanillaJs"><span>Páginas Web</span></li>
                         <li class="list" data-filter="reactJs">
                             <div class="galleryIcons">
                                 <i class="fa-brands fa-react"></i>
@@ -235,10 +267,195 @@
                 </footer>
                 <!--End of Footer-->
             <!--End of MainContent-->
+            </div>
+            <div id="mainContent" class="english">
+                <!--Home-->
+                <div id="home">
+                    <div id="content">
+                        <h1>Arthur Guilherme</h1>
+                        <h2>Frontend Developer</h2>
+                        <p>
+                            Know everything that I can do and develop. I’m always studying and improving my knowledges !
+                        </p>
+                        <a class="btn" href="download/Curriculum Vitae - Arthur Guilherme.pdf" download="curriculum_vitae_Arthur_Guilherme"><i class="fa-solid fa-download"></i>Curriculum</a>
+                    </div>
+                </div>
+                <!--End of Home-->
+                <!--About Me-->
+                <section class="aboutMe" id="aboutMe">
+                    <div class="titleSection">
+                        <h2 class="titleText">
+                            <span>W</span>ho I am
+                        </h2>
+                        <p>
+                            I know your time is little, so I will be brief . . .            
+                        </p>
+                    </div>
+                    <div class="aboutMeBox">
+                        <div class="divAboutMe">
+                            <h2 class="titleText"><span>A</span>rthur Guilherme</h2>
+                            <p>
+                                Well, I'm from Rio de Janeiro, I born in April 1992, I was Air Force Brazilian's military 
+                                between feb 2011 and feb 2019. I like sports, mainly bodybuilding. 
+                                As well I like play video game, PES and EA UFC even better :D
+                            <br />
+                            <br />
+                                I arrived in Portugal, Porto, in May 2019, with the purpose of learning and developing me in a career, and “like magic” 
+                                I've known The World of Programming. To stay focused on something and always to think about infinite ways 
+                                to resolve is an activity that I do day after day, so, I know I'm in the right path.
+                            <br />
+                            <br />
+                                Nowadays, besides the studies to improve my skills in FrontEnd, I've as well learned and enhanced 
+                                my knowledge in the English Language, because I know it is essential for success in the area.
+                            </p>
+                        </div>
+                        <div class="divAboutMe">
+                            <div class="imgBox">
+                                <img src="./css/imgs/arthur_guilherme_aboutMe.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End of About Me-->
+                <!--Projects-->
+                <section id="projects">
+                    <div class="titleSection">
+                        <h2 class="titleText">
+                            <span>P</span>rojects
+                        </h2>
+                        <p>
+                            Here are my projects.             
+                        </p>
+                    </div>
+                    <ul>
+                        <li class="list active" data-filter="all"><span>All</span></li>
+                        <li class="list" data-filter="vanillaJs"><span>Web Pages</span></li>
+                        <li class="list" data-filter="reactJs">
+                            <div class="galleryIcons">
+                                <i class="fa-brands fa-react"></i>
+                            </div>
+                        </li>
+                        <li class="list" data-filter="wordPressElementor">
+                            <div class="galleryIcons">
+                                <i class="fa-brands fa-wordpress"></i>
+                                <i class="fa-brands fa-elementor"></i>
+                            </div>
+                        </li>
+                        <li class="list" data-filter="others"><span>Others</span></li>
+                    </ul>
+                    <div class="projectBox">
+                        <p>Soon . . .</p>
+                       <!-- <div class="itemBox" data-item="vanillaJs">
+                            <img src="imgs/mobile1.jpg" />
+                            <div class="imgOverlay">
+                                <h4>Title</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
+                                </p>
+                                <div class="btnBox">
+                                    <a class="btn" href="#"><i class="fa-brands fa-github"></i>Code</a>
+                                    <a class="btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemBox" data-item="reactJs">
+                            <img src="imgs/camera1.jpg" />
+                            <div class="imgOverlay">
+                                <h4>Title</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
+                                </p>
+                                <div class="btnBox">
+                                    <a class="btn" href="#"><i class="fa-brands fa-github"></i>Código</a>
+                                    <a class="btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemBox" data-item="wordPressElementor">
+                            <img src="imgs/watch1.jpg" />
+                            <div class="imgOverlay">
+                                <h4>Title</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
+                                </p>
+                                <div class="btnBox">
+                                    <a class="btn" href="#"><i class="fa-brands fa-github"></i>Code</a>
+                                    <a class="btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>Ver</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="itemBox" data-item="others">
+                            <img src="imgs/shoe1.jpg" />
+                            <div class="imgOverlay">
+                                <h4>Title</h4>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.             
+                                </p>
+                                <div class="btnBox">
+                                    <a class="btn" href="#"><i class="fa-brands fa-github"></i>Code</a>
+                                    <a class="btn" href="#"><i class="fa-solid fa-magnifying-glass"></i>Ver</a>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+            <!--End of Projects-->
+                <!--Skills-->
+                <section id="skills">
+                    <div class="titleSection">
+                        <h2 class="titleText">
+                            <span>S</span>kills
+                        </h2>
+                        <p>
+                            Here is some knowledge that I have             
+                        </p>
+                    </div>
+                    <div class="aboutMeBox">
+                        <div class="divAboutMe">
+                            
+                            <p>
+                                The Map of the Studies to be a good Developer is a lot extensive, so, I follow orientations and chronological order 
+                                that other professionals indicate. Nowadays, I focus in to be a React Developer. 
+                                As well to add to programming my previous knowledge that I got through my journey of studies.
+                            </p>
+                        </div>
+                        <div class="divAboutMe">
+                            <ul class="skillIcons">
+                                <li>
+                                    <i class="fa-brands fa-html5"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-js"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-react"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-elementor"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-wordpress"></i>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+                <!--End of Skills-->
+                <!--Footer-->
+                <footer>
+                    <div id="endPage">
+                        <p>© 2022 arthurguilherme.com</p>
+                    </div>
+                </footer>
+                <!--End of Footer-->
+            <!--End of MainContent-->
+            </div>
         </div>
         <script src="js/script.js"></script>
         <!--FontAwesome-->
         <script src="https://kit.fontawesome.com/7dd89e9631.js" crossorigin="anonymous"></script>
-       <!--End-FontAwesome-->
+        <!--End-FontAwesome-->
     </body>
 </html>

@@ -1,8 +1,7 @@
 /* Side Navigation */
-let arrow = document.querySelector(".fa-solid fa-arrow-right");
-let container = document.querySelector(".container");
-
 function arrowBtn() {
+
+    let container = document.querySelector(".container");
 
     if(!container.classList.contains("hidden")) {
         container.classList.add("hidden");
@@ -37,3 +36,16 @@ for(let i = 0; i < list.length; i++) {
     })
 }
 /* End of Gallery */
+/* To Change Language */
+function changeLanguage() {
+
+    let mainContainer = document.querySelector("#mainContainer");
+
+    if(mainContainer.classList.contains("change")) {
+        mainContainer.classList.remove("change");
+    } else {
+        mainContainer.classList.add("change");
+    }
+
+}
+/* End of To Chande Language */
