@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;/*1rem = 1px*/
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+/*End of General*/
+/*Header*/
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 15rem;
+    position: relative;   
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#menu {
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+}
+
+li {
+    padding: 1rem 0;
+    margin-right: 3rem;    
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 600;
+    transition:.5s;
+}
+
+a:hover {
+    font-weight: 900;
+}
+
+#btnContactUs {
+   padding: .5rem 2rem;
+   background-color: #fff;;
+}
+/*End of Header*/
+/*Main*/
+
+main {
+    width: 100%;
+    position: relative;
+    padding: 0 15rem;
+}
+/*Banner*/
+#banner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#textBanner {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: red;
+}
+/*End of Banner*/
+/*End of Main*/
