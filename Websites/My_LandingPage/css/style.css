@@ -42,7 +42,7 @@ header #toggle {
 }
 
 header #toggle:before {
-    content: "";
+    content: ""; /*This*/
     height: .2rem;
     width: 100%;
     background-color: #fff;
@@ -160,8 +160,8 @@ header #toggle:after {
 
 .socialMedia li a img {
     max-width: 2rem;
-    filter: invert(1);
-    mix-blend-mode: difference;
+    filter: invert(1); /*This*/
+    mix-blend-mode: difference; /*This*/
 }
 /*End of Social Media*/
 /*Nav*/

@@ -210,7 +210,7 @@ header.sticky #navigation a {
     height: 30rem;
 }
 
-.menu .content .box .imgBox img {
+.menu .content .box .imgBox img { /*this*/
     position: absolute;
     top: 0;
     left: 0;
