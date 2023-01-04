@@ -14,7 +14,7 @@ html {
 
 section {
     min-height: 100vh;
-    padding: 10rem 10rem;
+    padding: 12rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +35,10 @@ h3 {
 
 h4 {
     font-size: 2.8rem;
+}
+
+h5 {
+    font-size: 2.4rem;
 }
 
 p {
@@ -388,4 +392,60 @@ main {
     object-fit: cover;
 }
 /*End of See Places*/
+/*Choose Anywhere*/
+#chooseAnywhere {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232323;
+    color: #fff;
+    padding: 12rem 0;
+    padding-left: 10rem;
+}
+
+#chooseAnywhere .box1 {
+    width: 34%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50rem;
+}
+
+#chooseAnywhere .box1 h2 {
+    line-height: 4rem;
+    letter-spacing: .3rem;
+    margin-bottom: 8rem;
+}
+
+#chooseAnywhere .box1 h5 {
+    margin-bottom: .5rem;
+}
+
+#chooseAnywhere .box1 p {
+    margin-bottom: 5rem;
+    line-height: 2.2rem;
+}
+
+#chooseAnywhere .box2 {
+    width: 58%;
+}
+
+#chooseAnywhere .box2 .imageBox2 {
+    width: 100%;
+    height: 50rem;
+    position: relative;
+}
+
+#chooseAnywhere .box2 .imageBox2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+/*End of Choose Anywhere*/
+/*Choose you Pack of Travel*/
+
+/*End of Choose you Pack of Travel*/
 /*End of Main*/
