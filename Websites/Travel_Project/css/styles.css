@@ -517,12 +517,58 @@ main {
 }
 /*End of Choose you Pack of Travel*/
 /*Here's what they have to say*/
-
-
 #hereIs h3 {
     font-size: 6rem;
     text-align: center;
 }
+
+#testimonyBox {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#testimonyBox .customerBox {
+    width: 28%;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#testimonyBox .customerBox .pictureBox {
+    width: 12rem;
+    height: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000;
+    position: relative;
+    margin-bottom: 1rem;
+    border-radius: 10rem;
+    margin-bottom: 4rem;
+}
+
+#testimonyBox .customerBox .pictureBox .fa-solid {
+    color:#fff;
+    font-size: 8rem;
+    line-height: 16rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#testimonyBox .customerBox h5 {
+    margin-bottom: 1.5rem;
+}
+
+#testimonyBox .customerBox p {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
 /*End of Here's what they have to say*/
 /*Be update*/
 #beUpdate {
@@ -539,10 +585,11 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
 }
 
 #beUpdate .form h4{
-    font-size: 6rem;
+    font-size: 5rem;
     position: relative;
 }
 
@@ -556,12 +603,49 @@ main {
     display:block;
 }
 
+#beUpdate .form #formBox form .boxInput {
+    width: 100%;
+    position: relative;
+}
+
+#beUpdate .form #formBox form .boxInput input, #beUpdate .form #formBox form .boxInput textarea {
+    width: 80%;
+    border: 1px solid #000;
+}
+
+#beUpdate .form #formBox form .boxInput input {
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+#beUpdate .form #formBox form .boxInput textarea {
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+}
+
+#beUpdate .form #formBox form .boxInput.inputBtn input {
+    cursor: pointer;
+    transition: .5s;
+    background-color: #000;
+    color: #fff;
+    width: 80%;
+    height: 5rem;
+    border-radius: .5rem;
+    font-size: 1.8rem;
+}
+
+#beUpdate .form #formBox form .boxInput.inputBtn input:hover {
+    background-color: #fff;
+    color: #000;
+}
+
 #beUpdate .imageBox {
     width: 58%;
     height: 50rem;
     position: relative;
 }
-
 
 #beUpdate .imageBox img {
     width: 100%;
@@ -576,7 +660,7 @@ footer {
     width: 100%;
     background-color: #c4c4c4;
     color: #232323;
-    padding: 12rem 10rem; 
+    padding: 10rem 10rem; 
 }
 
 #informationsBox {
@@ -619,5 +703,19 @@ footer {
     text-decoration: none;
     color: #232323;
     font-size: 1.6rem;
+    transition:.5s;
+    transform: scale(1);
+
+}
+
+#informationsBox #quickLinks #linksBox .boxLinks a:hover {
+    transition: .3s;
+    transform: scale(1.05);
+
+}
+
+#endFooter p{
+    text-align: center;
+   margin-top: 10rem;
 }
 /*End of Footer*/
