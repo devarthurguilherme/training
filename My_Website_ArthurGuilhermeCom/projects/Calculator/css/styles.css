@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/*color pallet https://www.nicepng.com/maxp/u2w7a9u2q8a9o0o0/*/ 
+/*General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+/*End of General*/
+/*Calculator*/
+#screenBox {
+    padding: 2rem 15rem;
+    min-height: 100vh;
+    position: relative;
+}
+#calculator {
+    width: 40rem;
+    height: 50rem;
+    padding: 2rem;
+    border-radius: 3rem;
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.603);
+    background-color: #5C5C5C;
+    color: #333333;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+
+#displayContainer {
+    width: 100%;
+    height: 9rem;
+    background-color: #F2F2F2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    position: relative;
+    border-radius: 2.5rem;
+    text-align: right;
+    padding: 1rem;
+    font-size: 3rem;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #000;
+   
+}
+
+#resultNumber {
+   font-weight: 700;
+   font-size: 3.5rem;
+}
+
+#buttonsContainer {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+}
+
+.rowBtns {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 8rem;
+    height: 5rem;
+    line-height: 5rem; /*To center element*/
+    background-color: #F2F2F2;
+    margin: .6rem 0;
+    border-radius: .8rem;
+    font-size: 3rem;
+    font-weight: 700;
+    transition: .2s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.btn:hover {
+    transition: .2s;
+    transform: scale(1.08);
+    background-color: #1B2C41;
+    color: #F2F2F2;
+}
+
+#zero {
+    width: 17.5rem;
+}
+
+#equals {
+    background-color: #F5AF4C;
+    color: #fff;
+    width: 17.5rem;
+}
+
+#equals:hover {
+    background-color: #fcac3d;
+    color: #fff;
+}
+/*End of Calculator*/
+/*Responsive Design*/
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #screenBox {
+        padding: 2rem 2rem;
+        min-height: 100vh;
+        position: relative;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #displayContainer {
+        padding: 0.6rem;
+        margin-bottom: 1rem;
+        font-size: 5rem;
+    }
+
+    #resultNumber {
+        font-size: 5.4rem;
+        margin-top: -0.7rem;
+    }
+
+    #calculator {
+        width: 50rem;
+        height: 60rem;
+        padding: 1rem;
+        border-radius: 3rem;
+        margin-top: 2rem;
+    }
+    #displayContainer {
+        height: 12rem;
+    }
+
+    #buttonsContainer {
+        margin-top: 2rem;
+    }
+
+    .btn {
+        width: 11rem;
+        height: 7rem;
+        line-height: 7rem;
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #screenBox {
+        padding: 1rem 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #calculator {
+        width: 40rem;
+        height: 50rem;
+    }
+
+    #buttonsContainer {
+        margin-top: 1rem;
+    }
+
+    .btn {
+        width: 9rem;
+        height: 5.5rem;
+        line-height: 5.5rem;
+        font-size: 4.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    #calculator {
+        width: 35rem;
+        height: 50rem;
+    }
+
+    .btn {
+        width: 7.5rem;
+        font-size: 4rem;
+    }
+
+    #zero {
+        width: 16rem;
+    }
+
+    #equals {
+        width: 16rem;
+    }
+}
+
+@media (max-width: 320px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #calculator {
+        width: 30rem;
+        height: 45rem;
+    }
+
+    #displayContainer {
+        height: 10rem;
+        font-size: 3.5rem;
+    }
+    
+    #resultNumber {
+        font-size: 4.3rem;
+        margin-top: -0.4rem;
+    }
+
+    .btn {
+        width: 6.5rem;
+        height: 5rem;
+        line-height: 5rem;
+        font-size: 4rem;
+    }
+
+    #zero {
+        width: 13rem;
+    }
+
+    #equals {
+        width: 13rem;
+    }
+}
+
+
+
+/*End of Responsive Design*/

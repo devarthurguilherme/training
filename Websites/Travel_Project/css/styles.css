@@ -12,8 +12,15 @@ html {
     font-size: 62.5%; /*1rem = 1px*/
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 section {
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     padding: 12rem 10rem;
     display: flex;
     flex-direction: column;
@@ -44,6 +51,14 @@ h5 {
 p {
     font-size: 1.5rem;
 }
+
+img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    box-shadow: .3rem .3rem 1rem .1rem rgba(0, 0, 0, 0.596)
+}
 /*End of General*/
 /*Header*/
 header {
@@ -53,7 +68,7 @@ header {
     align-items: center;
     padding: 4rem 10rem;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     background-color: #fff;
     transition: .3s;
 }
@@ -143,7 +158,7 @@ main {
     justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    padding: 5rem 10rem;
+    padding: 15rem 10rem;
     position: relative;
 }
 
@@ -191,14 +206,6 @@ main {
     width: 100%;
     height: 40rem;
     position: relative;
-}
-
-#imgBanner img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-    
 }
 /*End of Banner*/
 /*Call To Action - My Travels Log*/
@@ -265,13 +272,6 @@ main {
     position: relative;
 }
 
-.boxTravel img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-}
-
 .boxText .dividers {
     width: 6rem;
     border-top: 3px solid #000;
@@ -297,6 +297,7 @@ main {
 #seePlaces .imageBox img {
     width: 100%;
     height: 5rem;
+    box-shadow: none;
 }
 
 #seePlaces h2 {
@@ -325,11 +326,8 @@ main {
     position: relative;
 }
 
-.box1 .imageBox1 img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
+.box1 .imageBox1 img{
+    height: 80%;
 }
 
 .box2 {
@@ -342,13 +340,6 @@ main {
     width: 70%;
     height: 28rem;
     position: relative;
-}
-
-.box2 .imageBox2 img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
 }
 
 .box2 .textBox2 {
@@ -385,10 +376,8 @@ main {
 }
 
 .box2 .arrowBox2 img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    object-fit: cover;
+    box-shadow: none;
+    cursor: pointer;
 }
 /*End of See Places*/
 /*Choose Anywhere*/
@@ -436,13 +425,6 @@ main {
     height: 50rem;
     position: relative;
 }
-
-#chooseAnywhere .box2 .imageBox2 img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-}
 /*End of Choose Anywhere*/
 /*Choose you Pack of Travel*/
 #packOfTravel {
@@ -483,14 +465,6 @@ main {
     position: relative;
 }
 
-#packOfTravel .box2 .imageBox2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-
 .accordion {
     background-color: #eee;
     color: #444;
@@ -517,29 +491,89 @@ main {
 }
 /*End of Choose you Pack of Travel*/
 /*Here's what they have to say*/
+#hereIs {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
 #hereIs h3 {
     font-size: 6rem;
     text-align: center;
 }
 
 #testimonyBox {
-    width: 100%;
+    width: 90%;
     height: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
-#testimonyBox .customerBox {
+#testimonyBox .leftBtn, #testimonyBox .rightBtn  {
+    border: 1px solid #232323;
+    border-radius: 1rem;
+    /*width: 10vw;*/
+    /*height: 100%;*/
+    position: absolute;
+    /*top: 0;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 4;
+    font-size: 5rem;
+    opacity: .2;
+    padding: .7rem 1rem;
+    color: #232323
+}
+
+#testimonyBox .leftBtn:hover, #testimonyBox .rightBtn:hover {
+    opacity: 1;
+}
+
+#testimonyBox .leftBtn {
+    left: 0;
+    /*background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #fff 100%);*/
+}
+
+#testimonyBox .rightBtn {
+    right: 0;
+    /*background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);*/
+}
+
+
+#testimonyBox .customerContainer {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+}
+
+#testimonyBox .customerContainer::-webkit-scrollbar {
+    display:none;
+}
+
+#testimonyBox .customerContainer .customerCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 28%;
+    height: 35rem;
     text-align: center;
     border: 1px solid #000;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 4rem;
+    position: relative;
+    flex: 0 0 auto;
+    margin-left: 4rem;
+    box-shadow: .3rem .3rem 1rem .1rem rgba(0, 0, 0, 0.281)
 }
 
-#testimonyBox .customerBox .pictureBox {
+#testimonyBox .customerContainer .customerCard .pictureBox {
     width: 12rem;
     height: 12rem;
     margin-left: auto;
@@ -551,7 +585,7 @@ main {
     margin-bottom: 4rem;
 }
 
-#testimonyBox .customerBox .pictureBox .fa-solid {
+#testimonyBox .customerContainer .customerCard .pictureBox .fa-solid {
     color:#fff;
     font-size: 8rem;
     line-height: 16rem;
@@ -560,15 +594,14 @@ main {
     margin-right: auto;
 }
 
-#testimonyBox .customerBox h5 {
+#testimonyBox .customerContainer .customerCard h5 {
     margin-bottom: 1.5rem;
 }
 
-#testimonyBox .customerBox p {
+#testimonyBox .customerContainer .customerCard p {
     font-size: 1.4rem;
     font-style: italic;
 }
-
 /*End of Here's what they have to say*/
 /*Be update*/
 #beUpdate {
@@ -646,13 +679,6 @@ main {
     height: 50rem;
     position: relative;
 }
-
-#beUpdate .imageBox img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    object-fit: cover;
-}
 /*End of Be update*/
 /*---- End of Main ----*/
 /*Footer*/
@@ -716,6 +742,84 @@ footer {
 
 #endFooter p{
     text-align: center;
-   margin-top: 10rem;
+    margin-top: 10rem;
 }
 /*End of Footer*/
+/*Responsive Design*/
+
+@media (min-width: 1400px) {
+    header {
+        max-width: 150rem;
+    }
+
+    main {
+        max-width: 150rem;
+    }
+
+    #testimonyBox {
+        max-width: 150rem;
+    }
+
+    footer {
+        max-width: 150rem;
+    }
+}
+
+@media (max-width: 1200px) {
+   /*General*/
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.9rem;
+    }
+
+    h4 {
+        font-size: 2.3rem;
+    }
+    /*End of General*/
+    /*Main*/
+    /*Banner*/
+    #textBanner h1 {
+    line-height: 5.6rem;
+    }
+
+    #btnReserve {
+        padding: 0.5rem 1rem;
+    }
+    /*End of Banner*/
+    /*See Places*/
+    .box1 .imageBox1 img {
+    height: 100%;
+    }
+
+    .box2 .textBox2 .textBox2P p {
+        line-height: 1.5rem;
+    }
+
+    .box2 .arrowBox2 {
+        height: 3rem;
+    }
+
+    /*End of See Places*/
+    /*Choose Anywhere*/
+    #chooseAnywhere .box1 h2 {
+        letter-spacing: .2rem;
+        margin-bottom: 3rem;
+    }
+    #chooseAnywhere .box1 p {
+        margin-bottom: 3rem;
+    }
+    /*End of Choose Anywhere*/
+    /*End of Main*/
+}
+@media (max-width: 768px) { 
+    /*General*/
+    h1 {
+        font-size: 4rem;
+        color: red;
+    }
+    /*End of General*/
+}
+/*End of Responsive Design*/

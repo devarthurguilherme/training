@@ -19,3 +19,22 @@ for(let i = 0; i < accordion.length; i++) {
         }
     })
 }
+
+
+//Caroussel
+const customerContainer = document.querySelectorAll(".customerContainer");
+const customerCard = document.querySelector(".customerCard")
+
+const rightBtn = document.querySelectorAll(".rightBtn");
+const leftBtn = document.querySelectorAll(".leftBtn");
+
+customerContainer.forEach((card, i) => {
+
+    rightBtn[i].addEventListener('click', () => {
+        card.scrollLeft += customerCard.offsetWidth;
+    });
+
+    leftBtn[i].addEventListener('click', () => {
+        card.scrollLeft -= customerCard.offsetWidth;
+    });
+})
