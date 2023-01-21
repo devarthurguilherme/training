@@ -71,8 +71,6 @@ header {
     z-index: 5;
     background-color: #fff;
     transition: .3s;
-    top: 0;
-    left: 0;
 }
 
 header.scrollEffect {
@@ -874,8 +872,6 @@ footer {
         margin-top: 2rem;
     }
 
-    
-
     #boxSeePlaces .box2 .imageBox2 {
         width: auto;
     }
@@ -940,7 +936,7 @@ footer {
 @media (max-width: 768px) { 
     /*General*/
     h1 {
-            font-size: 7rem;
+        font-size: 7rem;
     }
 
     h2 {
@@ -997,7 +993,7 @@ footer {
 
     main #sideNav {
         background-color: rgba(255, 255, 255, 0.911);
-        width: 40vw;
+        width: 60vw;
         height: 100vh;
         position: fixed;
         z-index: 6;
@@ -1006,7 +1002,7 @@ footer {
         justify-content: center;
         align-items: center;
         transition: .5s;
-        transform: translateX(-40vw)
+        transform: translateX(-60vw)
         
     }
 
@@ -1257,22 +1253,22 @@ footer {
     }
 
     #boxSeePlaces .box2 .textBox2 {
-        flex-direction: row;
+        flex-direction: column;
         padding: 0 8rem;
     }
 
     #boxSeePlaces .box2 .textBox2 .textBox2H4 {
-        width: 48%;
-        align-self: center;
+        width: 100%;
     }
 
     #boxSeePlaces .box2 .textBox2 .textBox2H4 h4 {
-        line-height: 5rem;
+        line-height: 4rem;
+        font-size: 3rem;
+        text-align: center;
     }
 
     #boxSeePlaces .box2 .textBox2 .textBox2P {
-        width: 48%;
-        text-align: justify;
+        width: 100%;
     }
 
     #boxSeePlaces .box2 .textBox2 .textBox2P p {
@@ -1287,12 +1283,9 @@ footer {
         display: block;
     }
 
-    #boxSeePlaces .box2 .arrowBox2 {
+    #boxSeePlaces .box2 .arrowBox2.responsive {
+        width: 25%;
         height: auto;
-    }
-
-    #boxSeePlaces .box2 .arrowBox2 {
-        width: 30%;
         margin-top: 3rem;
         margin-bottom: 4rem;
         padding-right: 8rem;
@@ -1366,7 +1359,7 @@ footer {
     }
 
     #testimonyBox {
-        width: 100%;
+        width: 90%;
         height: auto;
         margin-bottom: 15rem;
     }
@@ -1412,7 +1405,7 @@ footer {
 
     #beUpdate .form {
         width: 100%;
-        padding: 4rem 8rem;
+        padding: 3rem 8rem;
         margin-top: 10rem;
     }
 
@@ -1530,7 +1523,7 @@ footer {
     /*End of Be Update*/
     /*Footer*/
     footer {
-        padding: 4rem 8rem;
+        padding: 3rem 8rem;
     }
 
     #informationsBox h2 {
@@ -1634,6 +1627,11 @@ footer {
     }
     /*End of Here is*/
     /*Be Update*/
+
+    #beUpdate .form {
+        padding: 2rem 4rem;
+    }
+
     #beUpdate .form h4 {
         font-size: 5rem;
     }
@@ -1644,7 +1642,45 @@ footer {
     /*End of Be Update*/
 }
 
-@media (max-width: 450px) {
+@media (max-width: 440px) {
   
+    /*Be Update*/
+    #beUpdate .form {
+        padding: 1rem 4rem;
+    }
+    
+    #beUpdate .form h4 {
+        font-size: 4rem;
+    }
+    /*End of Be Update*/
+}
+
+@media (max-width: 391px) {
+    /*Banner*/
+    #btnReserve {
+        font-size: 2rem;
+    }
+    /*End of Banner*/
+    /*CTA*/
+    #btnMyTravel {
+        font-size: 1.4rem;
+        padding: 1rem 2rem;
+    }
+    /*End of CTA*/
+    /*Responsive Menu*/
+    main #sideNav #optionsMenuResponsive #contactUsResponsive {
+        font-size: 1.8rem;
+    }
+    /*End of Responsive Menu*/
+    /*See Places*/
+    #seePlaces h2 {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+    }
+    /*End of See Places*/
+}
+
+@media (max-width: 330px) {
+    
 }
 /*End of Responsive Design*/
